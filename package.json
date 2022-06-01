@@ -1,0 +1,37 @@
+{
+  "name": "mern-fullstack-project",
+  "version": "1.0.0",
+  "description": "Mern stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "my-app": "npm run start --prefix my-app",
+    "my-app:install": "npm install --prefix my-app",
+    "my-app:build": "npm run build --prefix my-app",
+    "dev": "cross-env NODE_ENV=development  concurrently \"npm run server\" \"npm run my-app\""
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "express"
+  ],
+  "author": "Balakin Sergey <balakinsergey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "client": "^0.0.1",
+    "concurrently": "^7.0.0",
+    "config": "^3.3.7",
+    "create-react-app": "^5.0.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
